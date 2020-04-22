@@ -1,0 +1,291 @@
+$dark-green: #61892f;
+$light-green: #86c232;
+$very-dark-grey: #222629;
+$dark-grey: #474b4f;
+$light-grey: #6b6e70;
+$primary-text-color: #fff;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  background: $very-dark-grey;
+  color: $primary-text-color;
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0;
+}
+
+#main_section {
+  background: linear-gradient(
+      rgba($very-dark-grey, 0.85),
+      rgba($very-dark-grey, 0.85)
+    ),
+    url(../assets/images/racoon.jpg) no-repeat center;
+  background-size: cover;
+  overflow: auto;
+  padding: 2%;
+}
+
+header {
+  width: 100%;
+  position: relative;
+
+  & .logo {
+    margin-left: 2%;
+
+    img {
+      max-width: 200px;
+      margin-top: -0.5rem;
+    }
+  }
+}
+
+.material-icons.phone_color {
+  color: #fff;
+}
+
+.header_phone {
+  float: right;
+}
+
+h1 a,
+h2,
+h3 {
+  color: $dark-green;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-text-color;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+main li {
+  line-height: 1.25em;
+  margin-top: 1.5%;
+}
+
+.mainTitle {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: none;
+
+  & span {
+    color: $light-grey;
+  }
+}
+
+.subTitle {
+  display: none;
+}
+
+.phone_number {
+  width: 100%;
+  text-align: center;
+
+  & i {
+    padding: 2%;
+  }
+}
+
+article {
+  width: 90%;
+  margin: auto;
+
+  & h1 {
+    color: $dark-green;
+  }
+
+  & h4 {
+    color: $light-green;
+  }
+
+  & p a {
+    font-style: italic;
+  }
+
+  & img {
+    display: none;
+  }
+
+  & .prev_area {
+    font-weight: bold;
+    color: #86c232;
+  }
+
+  & .mini_gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.separator {
+  clear: both;
+  width: 100%;
+  min-height: 100px;
+  background: url(../assets/images/paws.png) repeat-x center;
+  background-size: contain;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+.sep_wild {
+  height: 0;
+  background: url(../assets/images/vector_paw.png) repeat-x center;
+  background-size: contain;
+  transform: rotate(-5deg);
+  opacity: 0.8;
+}
+
+.sep_cayote {
+  height: 0;
+  background: url(../assets/images/coyote_paw.png) repeat-x center;
+  background-size: contain;
+  transform: rotate(3deg);
+  margin-top: 2%;
+}
+
+.animals_container {
+  width: 80%;
+  line-height: 80px;
+  margin: auto;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: stretch;
+
+  & img {
+    width: 35px;
+    margin-right: 5px;
+    margin-left: 10px;
+  }
+
+  & a:hover {
+    color: $light-green;
+  }
+
+  & p {
+    display: inline;
+    font-size: 1.25em;
+  }
+
+  & .animal_item {
+    margin: auto;
+    padding: 10px;
+    margin-right: 3%;
+    margin-left: 3%;
+  }
+}
+
+.offering_holder {
+  padding: 5% 10% 5% 10%;
+  margin: auto;
+  background-color: $very-dark-grey;
+  color: $primary-text-color;
+
+  & .offering {
+    margin-top: 5%;
+    overflow: auto;
+    line-height: 1.5em;
+
+    & i {
+      float: left;
+      margin-right: 3%;
+      color: $light-grey;
+    }
+
+    & i:nth-of-type(2) {
+      float: right;
+      margin-top: -3%;
+      margin-right: 0;
+      color: $light-grey;
+    }
+
+    & h3 {
+      display: inline;
+    }
+
+    & p {
+      margin-right: 3%;
+      font-size: 16px;
+    }
+  }
+}
+
+section {
+  background-color: $light-green;
+  color: $dark-grey;
+  padding: 4%;
+  overflow: auto;
+
+  & h2 {
+    color: #fff;
+  }
+
+  & p {
+    margin-right: 3%;
+    text-align: justify;
+  }
+
+  & .more_about {
+    float: right;
+    color: $dark-grey;
+    margin-right: 3%;
+    font-weight: 600;
+  }
+}
+
+// TODO: set css animation gallery for tablet and desktop only!!!!!!!!!!!!!!!!!!!!!!!1
+.gallery_holder {
+  clear: both;
+  margin: 0;
+  padding: 0;
+
+  & img {
+    width: 100%;
+    object-fit: cover;
+    margin: 0;
+    overflow: auto;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 5%;
+
+  & #img_bbb {
+    display: none;
+  }
+}
+
+.animals_h1 {
+  width: 100%;
+  background-color: $light-grey;
+  color: $primary-text-color;
+  padding: 4%;
+}
+
+aside {
+  display: none;
+  background-color: $light-green;
+  color: $dark-grey;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 5%;
+
+  & h4 {
+    color: #fff;
+  }
+}
+
+@import "menu", "tablet", "fullscreen";

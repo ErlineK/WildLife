@@ -1,0 +1,516 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  background: #222629;
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0;
+}
+
+#main_section {
+  background: linear-gradient(rgba(34, 38, 41, 0.85), rgba(34, 38, 41, 0.85)),
+    url(../assets/images/racoon_main.jpg) no-repeat center;
+  background-size: cover;
+  overflow: auto;
+  padding: 2%;
+}
+
+header {
+  width: 100%;
+  position: relative;
+}
+header .logo {
+  margin-left: 2%;
+}
+
+header .logo img {
+  max-width: 250px;
+  max-height: 81px;
+}
+
+.material-icons.phone_color {
+  color: #fff;
+}
+
+.header_phone {
+  float: right;
+}
+
+h1 a,
+h2,
+h3 {
+  color: #61892f;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+main li {
+  line-height: 1.25em;
+  margin-top: 1.5%;
+}
+
+.mainTitle {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: none;
+}
+.mainTitle span {
+  color: #6b6e70;
+}
+
+.subTitle {
+  display: none;
+}
+
+.phone_number {
+  width: 100%;
+  text-align: center;
+}
+.phone_number i {
+  padding: 2%;
+}
+
+article {
+  width: 90%;
+  margin: auto;
+}
+article h1 {
+  color: #61892f;
+}
+article h4 {
+  color: #86c232;
+}
+article p a {
+  font-style: italic;
+}
+article img {
+  display: none;
+}
+article .prev_area {
+  font-weight: bold;
+  color: #86c232;
+}
+article .mini_gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.separator {
+  clear: both;
+  width: 100%;
+  min-height: 100px;
+  background: url(../assets/images/paws.png) repeat-x center;
+  background-size: contain;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+.sep_wild {
+  height: 0;
+  background: url(../assets/images/vector_paw.png) repeat-x center;
+  background-size: contain;
+  transform: rotate(-5deg);
+  opacity: 0.8;
+}
+
+.sep_cayote {
+  height: 0;
+  background: url(../assets/images/coyote_paw.png) repeat-x center;
+  background-size: contain;
+  transform: rotate(3deg);
+  margin-top: 2%;
+}
+
+.animals_container {
+  width: 80%;
+  line-height: 80px;
+  margin: auto;
+  /* margin-top: 2rem; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: stretch;
+}
+.animals_container img {
+  width: 35px;
+  margin-right: 5px;
+  margin-left: 10px;
+}
+.animals_container a:hover {
+  color: #86c232;
+}
+.animals_container p {
+  display: inline;
+  font-size: 1.25em;
+}
+.animals_container .animal_item {
+  margin: auto;
+  padding: 10px;
+  margin-right: 3%;
+  margin-left: 3%;
+}
+
+.offering_holder {
+  padding: 5% 10% 5% 10%;
+  margin: auto;
+  background-color: #222629;
+  color: #fff;
+}
+.offering_holder .offering {
+  margin-top: 5%;
+  overflow: auto;
+  line-height: 1.5em;
+}
+.offering_holder .offering i {
+  float: left;
+  margin-right: 3%;
+  color: #6b6e70;
+}
+.offering_holder .offering i:nth-of-type(2) {
+  float: right;
+  margin-top: -3%;
+  margin-right: 0;
+  color: #6b6e70;
+}
+.offering_holder .offering h3 {
+  display: inline;
+}
+.offering_holder .offering p {
+  margin-right: 3%;
+  font-size: 16px;
+}
+
+section {
+  background-color: #86c232;
+  color: #474b4f;
+  padding: 4%;
+  overflow: auto;
+}
+section h2 {
+  color: #fff;
+}
+section p {
+  margin-right: 3%;
+  text-align: justify;
+}
+section .more_about {
+  float: right;
+  color: #474b4f;
+  margin-right: 3%;
+  font-weight: 600;
+}
+
+.gallery_holder {
+  clear: both;
+  margin: 0;
+  padding: 0;
+}
+.gallery_holder img {
+  width: 100%;
+  object-fit: cover;
+  margin: 0;
+  overflow: auto;
+}
+
+footer {
+  text-align: center;
+  padding: 5%;
+}
+footer #img_bbb {
+  display: none;
+}
+
+.animals_h1 {
+  width: 100%;
+  background-color: #6b6e70;
+  color: #fff;
+  padding: 4%;
+}
+
+aside {
+  display: none;
+  background-color: #86c232;
+  color: #474b4f;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 5%;
+}
+aside h4 {
+  color: #fff;
+}
+
+.menu_btn {
+  position: fixed;
+  right: 5px;
+  top: 5px;
+  padding: 10px;
+  color: #86c232;
+  z-index: 5;
+  cursor: pointer;
+  transition: transform 0.75s ease-out;
+}
+.menu_btn.close_menu {
+  transform: rotate(-90deg);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  text-align: center;
+  opacity: 0.9;
+  overflow: hidden;
+  transform: translate3d(0, -100%, 0);
+  transition: transform 0.75s ease-out;
+}
+nav.show_menu {
+  transform: translate3d(0, 0, 0);
+}
+nav .menu_list {
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background: #16191b;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+nav li {
+  margin: 5%;
+  transform: translate3d(600px, 0, 0);
+  transition: transform 0.75s ease-out;
+}
+nav li.current > a {
+  font-weight: bold;
+  color: #86c232;
+}
+nav li a {
+  font-size: 130%;
+  white-space: nowrap;
+}
+nav li a:hover {
+  color: #86c232;
+}
+nav li.show_menu {
+  transform: translate3d(0, 0, 0);
+}
+
+.nav_item:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.nav_item:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.nav_item:nth-child(4) {
+  transition-delay: 0.4s;
+}
+
+.nav_item:nth-child(5) {
+  transition-delay: 0.5s;
+}
+
+.nav_item:nth-child(6) {
+  transition-delay: 0.6s;
+}
+
+@media screen and (min-width: 625px) {
+  .mainTitle {
+    display: block;
+    line-height: 1.5em;
+  }
+  article {
+    width: 75%;
+  }
+  article img {
+    max-width: 200px;
+    display: inline;
+    float: right;
+    margin: 0 0 2% 2%;
+  }
+  .animals_container {
+    width: 80%;
+  }
+  .animals_container img {
+    width: 40px;
+    margin-right: 0.5rem;
+    margin-left: 0.75rem;
+  }
+  .animals_container p {
+    display: inline;
+    font-size: 1.7em;
+  }
+  section {
+    float: left;
+    width: 50%;
+  }
+  .offering_holder {
+    padding: 2% 3% 1% 3%;
+  }
+  .offering_holder .offering {
+    margin-top: 3%;
+  }
+  .offering_holder .offering p {
+    text-align: left;
+  }
+  footer #img_bbb {
+    display: inline;
+    max-width: 25%;
+  }
+  aside {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .menu_btn {
+    display: none;
+  }
+  nav {
+    position: absolute;
+    width: 55%;
+    top: 7px;
+    right: 0;
+    text-align: right;
+    overflow: auto;
+    transform: translate3d(0, 0, 0);
+  }
+  nav .menu_list {
+    height: inherit;
+    background: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-direction: row;
+  }
+  nav li {
+    margin: 2%;
+    transform: translate3d(0, 0, 0);
+  }
+  nav li.show_menu {
+    transform: translate3d(0, 0, 0);
+  }
+  .main_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto, inherit auto;
+  }
+  .main_content h1,
+  .main_content h2,
+  .main_content h3 {
+    font-size: 1.8em;
+  }
+  .main_content .mainTitle {
+    grid-area: 1/1/2/3;
+    align-self: end;
+    text-align: right;
+  }
+  .main_content .subTitle {
+    display: block;
+    grid-area: 2/1/3/3;
+    align-self: end;
+    text-align: right;
+    color: #fff;
+  }
+  .main_content .phone_number {
+    grid-area: 3/1/4/3;
+    align-self: start;
+    text-align: right;
+    margin: 0;
+    font-size: 2em;
+  }
+  .main_content .phone_number i {
+    display: none;
+  }
+  .main_content .animals_container {
+    grid-area: 1/3/4/4;
+    display: inline;
+    justify-content: right;
+    text-align: left;
+    line-height: 70px;
+    padding-left: 5%;
+    border-left: 4px solid #6b6e70;
+  }
+  .main_content .animals_container img {
+    width: 35px;
+  }
+  .main_content .animals_container p {
+    font-size: 1.5em;
+  }
+  #secondary_section {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "offerings offerings"
+      "about gallery";
+  }
+  .offering_holder {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-flow: row, wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    grid-area: offerings;
+  }
+  .offering_holder .offering {
+    margin: auto;
+    padding: 2%;
+  }
+  .offering_holder .offering h3 {
+    font-size: 1.7em;
+  }
+  #about {
+    grid-area: about;
+    width: 100%;
+    margin: auto;
+  }
+  .gallery_holder {
+    grid-area: gallery;
+    justify-self: stretch;
+    background-size: cover;
+    overflow: auto;
+    clear: none;
+    background: url(../assets/images/racoons.jpg) no-repeat center;
+  }
+  .gallery_holder img {
+    object-fit: cover;
+    margin: 0;
+    visibility: hidden;
+  }
+  footer {
+    clear: both;
+    padding: 2%;
+  }
+  .animal_article {
+    width: 66%;
+    float: left;
+    padding: 3%;
+  }
+  aside {
+    float: left;
+    width: 33%;
+    padding: 2%;
+    margin-top: 2rem;
+  }
+}

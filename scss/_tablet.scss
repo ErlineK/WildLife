@@ -1,0 +1,62 @@
+// Tablet view
+
+@media screen and (min-width: 625px) {
+  .mainTitle {
+    display: block;
+    line-height: 1.5em;
+  }
+
+  article {
+    width: 75%;
+
+    & img {
+      max-width: 250px;
+      display: inline;
+      float: right;
+      margin: 0 0 2% 2%;
+    }
+  }
+
+  .animals_container {
+    width: 80%;
+
+    & img {
+      width: 40px;
+      margin-right: 0.5rem;
+      margin-left: 0.75rem;
+    }
+
+    & p {
+      display: inline;
+      font-size: 1.7em;
+    }
+  }
+
+  section {
+    float: left;
+    width: 50%;
+  }
+
+  .offering_holder {
+    padding: 2% 3% 1% 3%;
+
+    & .offering {
+      margin-top: 3%;
+
+      & p {
+        text-align: left;
+      }
+    }
+  }
+
+  footer {
+    & #img_bbb {
+      display: inline;
+      max-width: 25%;
+    }
+  }
+
+  aside {
+    display: block;
+  }
+}
