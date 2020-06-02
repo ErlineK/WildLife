@@ -22,7 +22,7 @@ body {
       rgba($very-dark-grey, 0.85),
       rgba($very-dark-grey, 0.85)
     ),
-    url(../assets/images/racoon.jpg) no-repeat center;
+    url(./images/racoon.jpg) no-repeat center;
   background-size: cover;
   overflow: auto;
   padding: 2%;
@@ -131,7 +131,7 @@ article {
   clear: both;
   width: 100%;
   min-height: 100px;
-  background: url(../assets/images/paws.png) repeat-x center;
+  background: url(./images/paws.png) repeat-x center;
   background-size: contain;
   opacity: 0.4;
   z-index: -1;
@@ -139,7 +139,7 @@ article {
 
 .sep_wild {
   height: 0;
-  background: url(../assets/images/vector_paw.png) repeat-x center;
+  background: url(./images/vector_paw.png) repeat-x center;
   background-size: contain;
   transform: rotate(-5deg);
   opacity: 0.8;
@@ -147,7 +147,7 @@ article {
 
 .sep_cayote {
   height: 0;
-  background: url(../assets/images/coyote_paw.png) repeat-x center;
+  background: url(./images/coyote_paw.png) repeat-x center;
   background-size: contain;
   transform: rotate(3deg);
   margin-top: 2%;

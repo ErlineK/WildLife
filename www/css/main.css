@@ -12,7 +12,7 @@ body {
 
 #main_section {
   background: linear-gradient(rgba(34, 38, 41, 0.85), rgba(34, 38, 41, 0.85)),
-    url(../assets/images/racoon_main.jpg) no-repeat center;
+    url(../images/racoon_main.jpg) no-repeat center;
   background-size: cover;
   overflow: auto;
   padding: 2%;
@@ -112,7 +112,7 @@ article .mini_gallery {
   clear: both;
   width: 100%;
   min-height: 100px;
-  background: url(../assets/images/paws.png) repeat-x center;
+  background: url(../images/paws.png) repeat-x center;
   background-size: contain;
   opacity: 0.4;
   z-index: -1;
@@ -120,7 +120,7 @@ article .mini_gallery {
 
 .sep_wild {
   height: 0;
-  background: url(../assets/images/vector_paw.png) repeat-x center;
+  background: url(../images/vector_paw.png) repeat-x center;
   background-size: contain;
   transform: rotate(-5deg);
   opacity: 0.8;
@@ -128,7 +128,7 @@ article .mini_gallery {
 
 .sep_cayote {
   height: 0;
-  background: url(../assets/images/coyote_paw.png) repeat-x center;
+  background: url(../images/coyote_paw.png) repeat-x center;
   background-size: contain;
   transform: rotate(3deg);
   margin-top: 2%;
@@ -491,7 +491,7 @@ nav li.show_menu {
     background-size: cover;
     overflow: auto;
     clear: none;
-    background: url(../assets/images/racoons.jpg) no-repeat center;
+    background: url(../images/racoons.jpg) no-repeat center;
   }
   .gallery_holder img {
     object-fit: cover;
